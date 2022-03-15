@@ -1,0 +1,11 @@
+.card{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 50%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgb(77, 75, 75);
+}
+.card-img-top{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
