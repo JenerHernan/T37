@@ -2,9 +2,6 @@
   <img src="{{imagen}}" class="card-img-top">
   <div class="card-body">
     <h5 class="card-title">{{nombre}}</h5>
-    <div class="card-text">Estado: {{estado}}</div>
-    <div class="card-text">Especie: {{especie}}</div>
-    <div class="card-text">Genero: {{genero}}</div>
-    <div class="card-text">Origen: {{origen}}</div>
+    <a [routerLink]= "['/personajes',id]" class="btn btn-primary">Ver más</a>
   </div>
 </div>

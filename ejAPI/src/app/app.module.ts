@@ -7,6 +7,9 @@ import { MicomponenteComponent } from './micomponente/micomponente.component';
 import { HomeComponent } from './home/home.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { AboutComponent } from './about/about.component';
+import { PersonajedetalleComponent } from './personajedetalle/personajedetalle.component';
+import { TuberiaPipe } from './tuberia.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,9 +17,12 @@ import { AboutComponent } from './about/about.component';
     MicomponenteComponent,
     HomeComponent,
     PersonajesComponent,
-    AboutComponent
+    AboutComponent,
+    PersonajedetalleComponent,
+    TuberiaPipe
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule
   ],

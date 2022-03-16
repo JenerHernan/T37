@@ -7,11 +7,8 @@ import { Component, OnInit ,Input} from '@angular/core';
 })
 export class MicomponenteComponent implements OnInit {
   @Input() nombre: string | undefined;
-  @Input() estado: string | undefined;
-  @Input() especie: string | undefined;
-  @Input() genero: string | undefined;
-  @Input() origen: string | undefined;
   @Input() imagen: string | undefined;
+  @Input() id: string | undefined;
 
   constructor() {
 

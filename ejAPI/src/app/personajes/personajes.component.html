@@ -1,6 +1,6 @@
 <div id="personajes">
   <div *ngFor="let per of personajes">
-    <app-micomponente class="personaje" nombre = "{{per.name}}" estado="{{per.status}}" especie="{{per.species}}" genero="{{per.gender}}" origen="{{per.origin}}" imagen="{{per.image}}"></app-micomponente>
+    <app-micomponente class="personaje" id="{{per.id}}" nombre = "{{per.name}}" imagen="{{per.image}}"></app-micomponente>
   </div>
 </div>
 
