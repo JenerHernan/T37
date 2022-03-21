@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MiServicioService } from '../mi-servicio.service';
+import { APIService } from '../api.service';
 @Component({
   selector: 'app-personajes',
   templateUrl: './personajes.component.html',
@@ -9,10 +9,10 @@ export class PersonajesComponent implements OnInit {
 
   personajes: any = null;
 
-  constructor(private miservicio: MiServicioService) {}
+  constructor(private miservicio: APIService) {}
 
   ngOnInit(): void {
-    this.miservicio.getPersonajes().subscribe(result =>{ this.personajes = result;
+    this.miservicio.getAll().subscribe(result =>{ this.personajes = result;
       console.log(result)
     });
 

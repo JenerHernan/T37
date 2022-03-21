@@ -1,0 +1,34 @@
+<form>
+  <div class="form-group">
+    <label>Nombre</label>
+    <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" required [(ngModel)]="personaje.name" placeholder="Introduzca el nombre">
+  </div>
+  <div class="form-group">
+    <label>Estado</label>
+    <select [(ngModel)]="personaje.status" [ngModelOptions]="{standalone: true}" class="form-control">
+      <option>Alive</option>
+      <option>Dead</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Especie</label>
+    <input type="text" [(ngModel)]="personaje.species" [ngModelOptions]="{standalone: true}" class="form-control" placeholder="Introduzca la especie">
+  </div>
+  <div class="form-group">
+    <label>Genero</label>
+    <select [ngModelOptions]="{standalone: true}" [(ngModel)]="personaje.gender" class="form-control">
+      <option>Hombre</option>
+      <option>Mujer</option>
+      <option>Otros</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Origen</label>
+    <input [ngModelOptions]="{standalone: true}" type="text" class="form-control" [(ngModel)]="personaje.origin" placeholder="Introduzca el origen">
+  </div>
+  <div class="form-group">
+    <label>Imagen</label>
+    <input [ngModelOptions]="{standalone: true}" type="text" class="form-control" [(ngModel)]="personaje.image" placeholder="Introduzca el link de la imagen">
+  </div>
+  <button type="submit" (click)="save()" class="btn btn-primary">Submit</button>
+</form>

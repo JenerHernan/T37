@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { PersonajedetalleComponent } from './personajedetalle/personajedetalle.component';
 import { TuberiaPipe } from './tuberia.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { AddpersonajeComponent } from './addpersonaje/addpersonaje.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { HttpClientModule } from '@angular/common/http';
     PersonajesComponent,
     AboutComponent,
     PersonajedetalleComponent,
-    TuberiaPipe
+    TuberiaPipe,
+    AddpersonajeComponent
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { PersonajedetalleComponent } from './personajedetalle/personajedetalle.component';
-
+import {AddpersonajeComponent} from './addpersonaje/addpersonaje.component';
 const routes: Routes = [
   {
     path:'home',
@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path:'personajes/:id',
     component:PersonajedetalleComponent
+  },
+  {
+    path:'add',
+    component:AddpersonajeComponent
   },
   {
     path:'about',
