@@ -12,6 +12,12 @@ import { TuberiaPipe } from './tuberia.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { AddpersonajeComponent } from './addpersonaje/addpersonaje.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ProfileComponent } from './profile/profile.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { BoardModeratorComponent } from './board-moderator/board-moderator.component';
+import { BoardUserComponent } from './board-user/board-user.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     PersonajedetalleComponent,
     TuberiaPipe,
-    AddpersonajeComponent
+    AddpersonajeComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfileComponent,
+    BoardAdminComponent,
+    BoardModeratorComponent,
+    BoardUserComponent
   ],
   imports: [
     HttpClientModule,
